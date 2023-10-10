@@ -13,9 +13,9 @@ namespace Circo
 
         public int TempoApresentacao { get; protected set; }
 
-        public DateTime DataInicio { get; protected set; }
+        public DateTime DataInicio { get; protected set; } = DateTime.MinValue;
 
-        public DateTime? DataSaida { get; protected set; } = null;
+        public DateTime? DataSaida { get; protected set; } = DateTime.MinValue;
 
         internal Artista(string nome, string nomeArtistico, int tempoApresentacao, DateTime dataInicio, DateTime? dataSaida) { 
         
@@ -33,7 +33,7 @@ namespace Circo
             Console.WriteLine($"Tempo de apresentação: {TempoApresentacao}");
             Console.WriteLine($"Data de início: {DataInicio}");
 
-            if (DataSaida != null)
+            if (DataSaida != DateTime.MinValue)
                 Console.WriteLine($"Data de saída: {DataSaida}");
 
         }
@@ -41,7 +41,7 @@ namespace Circo
         public void RegistrarSaida()
         {
             Console.WriteLine("Digite a data de saída do artista:");
-            DateTime dataSaida = DateTime.Parse(Console.ReadLine()) ;
+            DateTime dataSaida = DateTime.TryParse(Console.ReadLine(), out dataSaida) ? dataSaida : DateTime.MinValue;
             DataSaida = dataSaida;
             Console.WriteLine($"Data de saída: {DataSaida}");
         }

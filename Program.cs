@@ -10,7 +10,7 @@ namespace Circo
     {
         static void Main()
         {
-            Malabarista malabarista1 = new Malabarista("Vitor", "Vetor", 10, new DateTime(2010,10,9), new DateTime(2019, 1, 29), 4, "batatas");
+            Malabarista malabarista1 = new Malabarista(nome:"Vitor", nomeArtistico:"Vetor", tempoApresentacao: 10, dataInicio: new DateTime(2010,10,9), dataSaida: new DateTime(2019, 1, 29), qtdObjetos: 4, utensilio:"batatas");
             malabarista1.ImprimirArtista();
             malabarista1.FazerMalabarismo();
             Console.WriteLine("\n");
@@ -26,6 +26,7 @@ namespace Circo
 
             palhaco.RegistrarSaida();
             Console.WriteLine("\n");
+
 
             palhaco.ImprimirArtista();
         }
