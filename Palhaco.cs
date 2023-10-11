@@ -1,8 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//Aprimore o sistema do circo.
+//Crie propriedades e métodos construtores específicos dos filhos. Por exemplo, tipo de malabarismo,
+//se é com bolas ou outros itens. Quantidade máxima de itens empilhados do equilibrista..
+//Cada um deles terá o seu método de realizar performance que mostrará suas habilidades específicas,
+//caso não possua habilidade especifica ele mostrará "Atração especial em criação!". (isso não é um if :))
+//Deixe o Palhaço sem habilidade especifica.
+//Crie testes para seu programa, imprima as suas propriedades e realize sua performance utilizando herança e
+//polimorfismo.
+
 
 namespace Circo
 {
@@ -14,14 +18,6 @@ namespace Circo
             : base(nome, nomeArtistico, tempoApresentacao, dataInicio, dataSaida)
         { 
             Engracado = engracado;
-        }
-
-        public void FazerPiada()
-        {
-            if(!Engracado)
-                Console.WriteLine($"{Nome} fez uma piada... Ninguém riu...");
-            else
-                Console.WriteLine($"{Nome} fez uma piada... Algumas pessoas riram!");
         }
     }
 }

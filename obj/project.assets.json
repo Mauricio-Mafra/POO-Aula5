@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Documentos\\Projects\\TransformaDev\\Modulo 2\\Aulas\\Aula 5\\Aula 5\\Aula 5.csproj",
+      "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Documentos\\Projects\\TransformaDev\\Modulo 2\\Exercícios\\POO - Exercicio 2\\POO-Aula5\\Aula 5.csproj",
       "projectName": "Aula 5",
-      "projectPath": "C:\\Users\\mauri\\OneDrive\\Documentos\\Projects\\TransformaDev\\Modulo 2\\Aulas\\Aula 5\\Aula 5\\Aula 5.csproj",
+      "projectPath": "C:\\Users\\mauri\\OneDrive\\Documentos\\Projects\\TransformaDev\\Modulo 2\\Exercícios\\POO - Exercicio 2\\POO-Aula5\\Aula 5.csproj",
       "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauri\\OneDrive\\Documentos\\Projects\\TransformaDev\\Modulo 2\\Aulas\\Aula 5\\Aula 5\\obj\\",
+      "outputPath": "C:\\Users\\mauri\\OneDrive\\Documentos\\Projects\\TransformaDev\\Modulo 2\\Exercícios\\POO - Exercicio 2\\POO-Aula5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

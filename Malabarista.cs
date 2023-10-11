@@ -10,6 +10,18 @@
 //Teremos também um método para exibir as informações e um para registrar a data de saída de algum artista e inativar seu cadastro.
 //Crie testes dos seus objetos filhos.
 
+
+//Aprimore o sistema do circo.
+//Crie propriedades e métodos construtores específicos dos filhos. Por exemplo, tipo de malabarismo,
+//se é com bolas ou outros itens. Quantidade máxima de itens empilhados do equilibrista..
+//Cada um deles terá o seu método de realizar performance que mostrará suas habilidades específicas,
+//caso não possua habilidade especifica ele mostrará "Atração especial em criação!". (isso não é um if :))
+//Deixe o Palhaço sem habilidade especifica.
+//Crie testes para seu programa, imprima as suas propriedades e realize sua performance utilizando herança e
+//polimorfismo.
+
+
+
 namespace Circo
 {
     internal class Malabarista : Artista
@@ -26,7 +38,7 @@ namespace Circo
             Utensilio = utensilio;
         }
 
-        public void FazerMalabarismo()
+        public override void RealizarPerformance()
         {
             Console.WriteLine($"Estou fazendo malabarismo com {QtdObjetos} {Utensilio}.");
         }
